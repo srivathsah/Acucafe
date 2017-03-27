@@ -17,7 +17,7 @@ namespace Acucafe.Tests.Scenarios
             _drinkName = "Tea";
         }
 
-        public void AndGiven_milk_should_be_added()
+        public void AndGiven_no_milk_should_be_added()
         {
             _shouldAddMilk = false;
         }
@@ -32,7 +32,7 @@ namespace Acucafe.Tests.Scenarios
             _result = SUT.OrderDrink(_drinkName, _shouldAddMilk, _shouldAddSugar);
         }
 
-        public void Then_the_result_should_be_tea_as_expected()
+        public void Then_the_result_should_be_tea()
         {
             var result = _result.Item2 as Tea;
             result.ShouldNotBe(null);

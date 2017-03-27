@@ -17,7 +17,7 @@ namespace Acucafe.Tests.Scenarios
             _drinkName = "Tea";
         }
 
-        public void AndGiven_milk_should_be_added()
+        public void AndGiven_no_milk_should_be_added()
         {
             _shouldAddMilk = false;
         }

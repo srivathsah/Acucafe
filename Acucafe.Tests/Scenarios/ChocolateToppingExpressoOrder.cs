@@ -31,7 +31,7 @@ namespace Acucafe.Tests.Scenarios
             _result = SUT.OrderDrink(_drinkName, false, false, _topping);
         }
 
-        public void Then_the_result_should_be_tea_as_expected()
+        public void Then_the_result_should_be_Expersso_with_chocolate_topping()
         {
             _result.Item2.ShouldNotBe(null);
             _result.Item2.Topping.ShouldNotBeNull();

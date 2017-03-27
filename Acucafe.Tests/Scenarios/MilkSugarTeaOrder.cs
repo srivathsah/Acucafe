@@ -22,7 +22,7 @@ namespace Acucafe.Tests.Scenarios
             _shouldAddMilk = true;
         }
 
-        public void AndGiven_no_Sugar_should_be_added()
+        public void AndGiven_Sugar_should_be_added()
         {
             _shouldAddSugar = true;
         }

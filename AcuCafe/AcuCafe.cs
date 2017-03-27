@@ -40,7 +40,6 @@ namespace AcuCafe
                 return new Tuple<string, Drink>(message, drink);
             }
 
-            message = _unableToProcess;
             message = drink.Prepare();
             return new Tuple<string, Drink>(message, drink);
         }

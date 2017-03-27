@@ -101,6 +101,9 @@
     <Compile Include="SpecifyBootstrapper.cs" />
     <Compile Include="Stories\OrderStory.cs" />
     <Compile Include="Stories\ToppingsStory.cs" />
+    <Compile Include="UnitTests\AcuCafeTests.cs" />
+    <Compile Include="UnitTests\AutoMoqDataAttribute.cs" />
+    <Compile Include="UnitTests\InlineAutoMoqData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

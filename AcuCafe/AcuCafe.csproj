@@ -41,7 +41,38 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AcuCafe.cs" />
+    <Compile Include="Factories\DrinkFactory.cs" />
+    <Compile Include="Factories\DrinkValidtorFactory.cs" />
+    <Compile Include="Factories\ExpressoFactory.cs" />
+    <Compile Include="Factories\IceTeaFactory.cs" />
+    <Compile Include="Factories\IDrinkFactory.cs" />
+    <Compile Include="Factories\IDrinkValidatorFactory.cs" />
+    <Compile Include="Factories\IExpressoFactory.cs" />
+    <Compile Include="Factories\IIceTeaFactory.cs" />
+    <Compile Include="Factories\ITeaFactory.cs" />
+    <Compile Include="Factories\TeaFactory.cs" />
+    <Compile Include="Models\Drink.cs" />
+    <Compile Include="Models\Expresso.cs" />
+    <Compile Include="Models\IceTea.cs" />
+    <Compile Include="Models\MilkDrink.cs" />
+    <Compile Include="Models\NoMilkDrink.cs" />
+    <Compile Include="Models\Tea.cs" />
+    <Compile Include="Models\ValidationMessage.cs" />
+    <Compile Include="Plugins\DefaultPluginFactory.cs" />
+    <Compile Include="Plugins\ExpressoPlugin.cs" />
+    <Compile Include="Plugins\IceTeaPlugin.cs" />
+    <Compile Include="Plugins\IDrinkPlugin.cs" />
+    <Compile Include="Plugins\IPluginsFactory.cs" />
+    <Compile Include="Plugins\TeaPlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validators\DrinkValidator.cs" />
+    <Compile Include="Validators\ExpressoValidator.cs" />
+    <Compile Include="Validators\IceTeaValidator.cs" />
+    <Compile Include="Validators\IDrinkValidator.cs" />
+    <Compile Include="Validators\IExpressoValidator.cs" />
+    <Compile Include="Validators\IIceTeaValidator.cs" />
+    <Compile Include="Validators\ITeaValidator.cs" />
+    <Compile Include="Validators\TeaValidator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ReadMe.txt" />

@@ -51,12 +51,14 @@
     <Compile Include="Factories\IIceTeaFactory.cs" />
     <Compile Include="Factories\ITeaFactory.cs" />
     <Compile Include="Factories\TeaFactory.cs" />
+    <Compile Include="Models\ChocolateTopping.cs" />
     <Compile Include="Models\Drink.cs" />
     <Compile Include="Models\Expresso.cs" />
     <Compile Include="Models\IceTea.cs" />
     <Compile Include="Models\MilkDrink.cs" />
     <Compile Include="Models\NoMilkDrink.cs" />
     <Compile Include="Models\Tea.cs" />
+    <Compile Include="Models\Topping.cs" />
     <Compile Include="Models\ValidationMessage.cs" />
     <Compile Include="Plugins\DefaultPluginFactory.cs" />
     <Compile Include="Plugins\ExpressoPlugin.cs" />

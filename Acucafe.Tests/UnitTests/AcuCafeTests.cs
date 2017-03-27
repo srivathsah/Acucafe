@@ -1,5 +1,6 @@
 ﻿using Acucafe.Tests.UnitTests.Fixtures;
 using AcuCafe;
+using AcuCafe.Models;
 using Moq;
 using Ploeh.AutoFixture.Xunit2;
 using Shouldly;
@@ -21,7 +22,7 @@ namespace Acucafe.Tests.UnitTests
             if (!returnNullValidator)
             {
                 drinkValidatorFactory.Setup(x => x.Get(It.IsAny<string>())).Returns(drinkValidator.Object);
-                drinkValidator.Setup(x => x.Validate(It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<bool>())).Returns(validation);
+                drinkValidator.Setup(x => x.Validate(It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<bool>(), It.IsAny<Topping>())).Returns(validation);
             }
             else
             {

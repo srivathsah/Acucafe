@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AcuCafe.Models;
+using System;
 
 namespace AcuCafe
 {
@@ -8,6 +9,7 @@ namespace AcuCafe
 
         public bool HasSugar { get; set; }
         public abstract string Description { get; }
+        public virtual Topping Topping { get; set; }
 
         public virtual double Cost()
         {

@@ -1,4 +1,6 @@
-﻿namespace AcuCafe
+﻿using AcuCafe.Models;
+
+namespace AcuCafe
 {
     public class DrinkValidator : IDrinkValidator
     {
@@ -9,9 +11,9 @@
             _drinkValidatorFactory = drinkValidatorFactory;
         }
 
-        public bool Validate(string type, bool hasSugar, bool hasMilk)
+        public bool Validate(string type, bool hasSugar, bool hasMilk, Topping topping = null)
         {
-            return _drinkValidatorFactory.Get(type).Validate(type, hasSugar, hasMilk);
+            return _drinkValidatorFactory.Get(type).Validate(type, hasSugar, hasMilk, topping);
         }
     }
 }

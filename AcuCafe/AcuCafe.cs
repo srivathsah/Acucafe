@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AcuCafe.Models;
+using System;
 
 namespace AcuCafe
 {
@@ -14,7 +15,7 @@ namespace AcuCafe
             _drinkValidatorFactory = drinkValidatorFactory;
         }
 
-        public Tuple<string, Drink> OrderDrink(string type, bool hasMilk, bool hasSugar)
+        public Tuple<string, Drink> OrderDrink(string type, bool hasMilk, bool hasSugar, Topping topping = null)
         {
             var message = string.Empty;
             var drink = default(Drink);
@@ -26,7 +27,7 @@ namespace AcuCafe
                 return new Tuple<string, Drink>(message, drink);
             }
 
-            if (!drinkValidator.Validate(type, hasSugar, hasMilk))
+            if (!drinkValidator.Validate(type, hasSugar, hasMilk, topping))
             {
                 message = _unableToProcess;
                 return new Tuple<string, Drink>(message, drink);

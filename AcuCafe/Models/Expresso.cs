@@ -1,4 +1,7 @@
-﻿namespace AcuCafe
+﻿using System;
+using AcuCafe.Models;
+
+namespace AcuCafe
 {
     public class Expresso : NoMilkDrink
     {

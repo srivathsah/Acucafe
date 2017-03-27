@@ -31,12 +31,12 @@ namespace Acucafe.Tests.UnitTests
 
             if (!returnNullDrink)
             {
-                drinkFactory.Setup(x => x.Get(It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<bool>())).Returns(expectedDrink.Object);
+                drinkFactory.Setup(x => x.Get(It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<bool>(), It.IsAny<Topping>())).Returns(expectedDrink.Object);
                 expectedDrink.Setup(x => x.Prepare()).Returns(expectedMessage);
             }
             else
             {
-                drinkFactory.Setup(x => x.Get(It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<bool>())).Returns(default(Drink));
+                drinkFactory.Setup(x => x.Get(It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<bool>(), It.IsAny<Topping>())).Returns(default(Drink));
             }
 
             var result = sut.OrderDrink(It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<bool>());

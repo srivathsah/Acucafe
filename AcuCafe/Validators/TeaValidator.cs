@@ -6,7 +6,7 @@ namespace AcuCafe
     {
         public bool Validate(string type, bool hasSugar, bool hasMilk, Topping topping = null)
         {
-            return true;
+            return topping == null;
         }
     }
 }

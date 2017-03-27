@@ -33,8 +33,9 @@ namespace Acucafe.Tests.Scenarios
 
         public void Then_the_result_should_be_tea_as_expected()
         {
-            _result.Item2.ShouldBe(null);
-            _result.Item1.ShouldBe("We are unable to prepare your drink.");
+            _result.Item2.ShouldNotBe(null);
+            _result.Item2.Topping.ShouldNotBeNull();
+            _result.Item1.ShouldNotBe("We are unable to prepare your drink.");
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using AcuCafe.Plugins;
+﻿using AcuCafe.Models;
+using AcuCafe.Plugins;
 using System;
 using System.Collections.Generic;
 
@@ -22,14 +23,14 @@ namespace AcuCafe.Factories
             _drinkFactories.Add(key, drinkFactory);
         }
 
-        public Drink Get(string type, bool hasSugar, bool hasMilk)
+        public Drink Get(string type, bool hasSugar, bool hasMilk, Topping topping = null)
         {
             if (!_drinkFactories.ContainsKey(type))
             {
                 throw new Exception("Drink Not Found");
             }
 
-            return _drinkFactories[type].Get(type, hasSugar, hasMilk);
+            return _drinkFactories[type].Get(type, hasSugar, hasMilk, topping);
         }
     }
 }

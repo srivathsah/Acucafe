@@ -33,7 +33,7 @@ namespace AcuCafe
                 return new Tuple<string, Drink>(message, drink);
             }
 
-            drink = _drinkFactory.Get(type, hasSugar, hasMilk);
+            drink = _drinkFactory.Get(type, hasSugar, hasMilk, topping);
             if (drink == null)
             {
                 message = _unableToProcess;
